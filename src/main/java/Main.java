@@ -1,4 +1,5 @@
 import DefaultMethods.DefaultMethod;
+import InterfacesFuncioanales.InterfacesFuncionales;
 import lambdas.Lambda;
 import lambdas.LambdaScope;
 
@@ -20,5 +21,9 @@ public class Main {
         DefaultMethod defaultMethod = new DefaultMethod();
         defaultMethod.caminar();
         defaultMethod.hablar();
+
+        System.out.println("*------------INTERFACES FUNCIONALES-------------*");
+        InterfacesFuncionales interfacesFuncionales = new InterfacesFuncionales();
+        System.out.println(interfacesFuncionales.operar(10, 15));
     }
 }
