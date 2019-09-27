@@ -1,3 +1,4 @@
+import Coleccion.Coleccion;
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
 import MethodReferences.MethodReferences;
@@ -34,6 +35,15 @@ public class Main {
         methodReferences.referenciarMetodoInstanciaObjetoArbitrario();
 
         methodReferences.referenciaConstrucor();
+
+        System.out.println("*------------COLECCION-------------*");
+        System.out.println("*------------FOREACH-------------*");
+        Coleccion coleccion = new Coleccion();
+        coleccion.llenarLista();
+        coleccion.usarForEach();
+        coleccion.ordenarLista();
+        //coleccion.usarRemoveIf();
+        coleccion.usarForEach();
 
     }
 }
