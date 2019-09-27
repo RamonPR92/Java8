@@ -1,6 +1,7 @@
 import Coleccion.Coleccion;
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
+import Map.MapTest;
 import MethodReferences.MethodReferences;
 import Optional.OptionalTest;
 import Streams.Streams;
@@ -69,5 +70,26 @@ public class Main {
         streamsParalelos.probarStream();
         System.out.println("--------------");
         streamsParalelos.porbarStreamParalelo();
+
+        System.out.println("*------------MAP-----------*");
+        MapTest mapTest = new MapTest();
+        mapTest.llenarMapa();
+        System.out.println("*------------------ v7*");
+        mapTest.imprimirJava7();
+        System.out.println("*------------------ v8*");
+        mapTest.imprimirJava8();
+        System.out.println("*------------------ v8*");
+        mapTest.insertarSiEsAusente();
+        mapTest.imprimirJava8();
+
+        System.out.println("*------------------ v8*");
+        mapTest.operarSiPresente();
+        mapTest.imprimirJava8();
+
+        System.out.println("*------------------ v8*");
+        mapTest.obtenerValorOPredeterminado();
+
+        System.out.println("*------------------ v8*");
+        mapTest.recolectar();
     }
 }
