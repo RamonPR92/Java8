@@ -1,5 +1,6 @@
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
+import MethodReferences.MethodReferences;
 import lambdas.Lambda;
 import lambdas.LambdaScope;
 
@@ -25,5 +26,14 @@ public class Main {
         System.out.println("*------------INTERFACES FUNCIONALES-------------*");
         InterfacesFuncionales interfacesFuncionales = new InterfacesFuncionales();
         System.out.println(interfacesFuncionales.operar(10, 15));
+
+        System.out.println("*------------REFERENCIAS A METODOS-------------*");
+        MethodReferences methodReferences = new MethodReferences();
+        methodReferences.saludar();
+
+        methodReferences.referenciarMetodoInstanciaObjetoArbitrario();
+
+        methodReferences.referenciaConstrucor();
+
     }
 }
