@@ -2,6 +2,7 @@ import Coleccion.Coleccion;
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
 import MethodReferences.MethodReferences;
+import Optional.OptionalTest;
 import Streams.Streams;
 import lambdas.Lambda;
 import lambdas.LambdaScope;
@@ -47,12 +48,18 @@ public class Main {
         coleccion.usarForEach();
 
         System.out.println("*------------STREAMS-------------*");
-        System.out.println("*------------FILTER-------------*");
         Streams streams = new Streams();
         streams.filtrar();
         streams.ordenar();
         streams.transformar();
         streams.limitar();
         streams.contar();
+
+        System.out.println("*------------OPTIONAL-------------*");
+        OptionalTest optionalTest = new OptionalTest();
+        optionalTest.probar(null);
+        optionalTest.orElse("Ramon");
+        optionalTest.orThrow("Ramon");
+        optionalTest.isPresent(null);
     }
 }
