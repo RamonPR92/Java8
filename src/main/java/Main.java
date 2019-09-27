@@ -4,6 +4,7 @@ import InterfacesFuncioanales.InterfacesFuncionales;
 import MethodReferences.MethodReferences;
 import Optional.OptionalTest;
 import Streams.Streams;
+import Streams.StreamsParalelos;
 import lambdas.Lambda;
 import lambdas.LambdaScope;
 
@@ -61,5 +62,12 @@ public class Main {
         optionalTest.orElse("Ramon");
         optionalTest.orThrow("Ramon");
         optionalTest.isPresent(null);
+
+        System.out.println("*------------STREAM PARALELO-------------*");
+
+        StreamsParalelos streamsParalelos = new StreamsParalelos();
+        streamsParalelos.probarStream();
+        System.out.println("--------------");
+        streamsParalelos.porbarStreamParalelo();
     }
 }
