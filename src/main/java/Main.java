@@ -1,6 +1,7 @@
 import Annotaciones.AnotacionesTest;
 import Annotaciones.LenguajeTest;
 import Coleccion.Coleccion;
+import DateAPI.DateAPITest;
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
 import Map.MapTest;
@@ -11,8 +12,10 @@ import Streams.StreamsParalelos;
 import lambdas.Lambda;
 import lambdas.LambdaScope;
 
+import java.text.ParseException;
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args)throws InterruptedException, ParseException {
         Lambda lambda = new Lambda();
         lambda.ordenar();
         System.out.println("*-----------LAMBDAS----------*");
@@ -100,5 +103,12 @@ public class Main {
 
         LenguajeTest lenguajeTest = new LenguajeTest();
         lenguajeTest.mostrar();
+
+        System.out.println("*------------DATEAPI------------*");
+        DateAPITest dateAPITest = new DateAPITest();
+        dateAPITest.compararFechas(8);
+        dateAPITest.medirTiempo(8);
+        dateAPITest.periodoEntreFechas(8);
+        dateAPITest.convertir(8);
     }
 }
