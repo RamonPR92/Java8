@@ -1,3 +1,5 @@
+import Annotaciones.AnotacionesTest;
+import Annotaciones.LenguajeTest;
 import Coleccion.Coleccion;
 import DefaultMethods.DefaultMethod;
 import InterfacesFuncioanales.InterfacesFuncionales;
@@ -91,5 +93,12 @@ public class Main {
 
         System.out.println("*------------------ v8*");
         mapTest.recolectar();
+
+        System.out.println("*------------ANOTACIONES------------*");
+        AnotacionesTest anotacionesTest = new AnotacionesTest();
+        anotacionesTest.mostrarMetadatos();
+
+        LenguajeTest lenguajeTest = new LenguajeTest();
+        lenguajeTest.mostrar();
     }
 }
