@@ -8,6 +8,7 @@ import InterfacesFuncioanales.InterfacesFuncionales;
 import Map.MapTest;
 import MethodReferences.MethodReferences;
 import Optional.OptionalTest;
+import RXJava.RXJavaTest;
 import Streams.Streams;
 import Streams.StreamsParalelos;
 import lambdas.Lambda;
@@ -126,5 +127,9 @@ public class Main {
         lista.add("Perez");
         lista.add("Rodriguez");
         funcionesAltoOrdenTest.filtrar(lista, System.out::println, 5);
+
+        System.out.println("*------------RX JAVA------------*");
+        RXJavaTest rxJavaTest = new RXJavaTest();
+        rxJavaTest.buscar();
     }
 }
