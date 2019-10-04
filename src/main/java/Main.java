@@ -3,6 +3,7 @@ import Annotaciones.LenguajeTest;
 import Coleccion.Coleccion;
 import DateAPI.DateAPITest;
 import DefaultMethods.DefaultMethod;
+import FuncionesAltoOrden.FuncionesAltoOrdenTest;
 import InterfacesFuncioanales.InterfacesFuncionales;
 import Map.MapTest;
 import MethodReferences.MethodReferences;
@@ -13,6 +14,8 @@ import lambdas.Lambda;
 import lambdas.LambdaScope;
 
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args)throws InterruptedException, ParseException {
@@ -110,5 +113,18 @@ public class Main {
         dateAPITest.medirTiempo(8);
         dateAPITest.periodoEntreFechas(8);
         dateAPITest.convertir(8);
+
+        System.out.println("*------------FUNCIONES DE ALTO ORDEN------------*");
+        FuncionesAltoOrdenTest funcionesAltoOrdenTest = new FuncionesAltoOrdenTest();
+        funcionesAltoOrdenTest.imprimir(funcionesAltoOrdenTest.getConvertirMayusculas(), "ramon");
+        funcionesAltoOrdenTest.imprimir(funcionesAltoOrdenTest.getConvertirMinusculas(), "RAMON");
+        String respuesta = funcionesAltoOrdenTest.mostrar("Hola ").apply("Ramon");
+        System.out.println(respuesta);
+
+        List<String> lista = new ArrayList<>();
+        lista.add("Ramon");
+        lista.add("Perez");
+        lista.add("Rodriguez");
+        funcionesAltoOrdenTest.filtrar(lista, System.out::println, 5);
     }
 }
